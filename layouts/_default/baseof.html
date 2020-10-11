@@ -9,7 +9,7 @@
 <body dir={{ .Site.Language.LanguageDirection }}>
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
+  <main class="container flex" style="max-width: 100%">
     <aside class="book-menu">
       {{ template "menu" . }} <!-- Left menu Content -->
     </aside>
