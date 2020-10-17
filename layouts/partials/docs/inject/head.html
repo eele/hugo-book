@@ -1,0 +1,18 @@
+<script>
+    document.onkeydown = function (e) {
+        var bookToc = document.getElementsByClassName("book-toc")[0];
+        if (!bookToc) {
+            return;
+        }
+        var event = e || window.event;  // 标准化事件对象
+        switch(event.keyCode){
+            case 37 :  // 按下左箭头键
+                bookToc.style.display = "block";
+                break;
+            case 39 :  // 按下右箭头键
+                bookToc.style.display = "none";
+                break;
+        }
+        return false
+    }
+</script>
